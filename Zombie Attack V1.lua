@@ -78,7 +78,12 @@ loadstring(game:HttpGet("https://pastebin.com/raw/T0qaXjAR", true))()
 end)
 
 d:NewButton("Infinite Jump", "Jump Without Getting Stopped in Mid Air", function()
-loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
 end)
 
 d:NewButton("Gravity", "Yea float like in the moon", function()
