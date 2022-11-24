@@ -73,7 +73,7 @@ end
 end
 end)
 
-b:NewButton("Btools(i know its not a weapon)", "It kinda a weapon but does not hurt", function()
+b:NewButton("Btools", "It kinda a weapon but does not hurt", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/T0qaXjAR", true))()
 end)
 
@@ -82,7 +82,7 @@ loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt")
 end)
 
 d:NewButton("Gravity", "Yea float like in the moon", function()
-game.Workspace.Gravity = 5
+game.Workspace.Gravity = 3
 end)
 
 a:NewButton("Kill Platforms", "idk ok", function()
@@ -154,10 +154,6 @@ end)
 end
   end
 end
-end)
-
-a:NewButton("Big Head Hitbox", "The Head Has Bigger Hitbox", function()
-loadstring(game:HttpGet("https://www.klgrth.io/paste/bcm45/raw"))()
 end)
 
 a:NewButton("AutoFarm","It Will Instantly start killing zombies",function()
